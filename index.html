@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fawazmdb</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script type="module" src="assets/index.js" defer></script>
+    <link rel="stylesheet" href="assets/index.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar__contents">
+                <div class="navbar__title">
+                    <a href="index.html"><img src="assets/photos/logo.jpg" alt="Logo"></a>
+                    <h1 class="pagetitle">FawazFlix</h1>
+                </div>
+                <div class="navbar__btns">
+                    <ul class="navbar__btns__list" id="listbtns">
+                        <li><a href="#nowplaying">Now playing</a></li>
+                        <li><a href="#popular">Popular</a></li>
+                        <li><a href="#toprated">Top rated</a></li>
+                        <li><a href="#upcoming">Upcoming</a></li>
+                    </ul>
+                </div>
+                <div class="navbar__profileimg">
+                    <a class="searchbaricon"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+                    <div class="profileimg">
+                        <a href=""><i class="fa-solid fa-user"></i>
+                            <i class="fa-solid fa-arrow-down"></i>
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </a>
+
+
+                        <div class="dropdown">
+                            <h3>Your Account</h3>
+                            <div class="dropdown__options">
+                                <a href="#">Account Info</a>
+                                <a href="#">Settings</a>
+                                <a href="Home.html">Log Out</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Navabar -->
+    <section class="searchbar">
+        <div class="container">
+            <div id="searchbar__container">
+                <input type="text" name="search" id="searchtext" placeholder="Search..." autocomplete="off"
+                    autocorrect="off">
+                <p id="searcherror"></p>
+            </div>
+        </div>
+    </section>
+    <!-- End Of Searchbar -->
+    <section id="nowplaying">
+        <div class="container">
+            <div class="card__header">
+                <h2>Now playing</h2>
+            </div>
+            <div class="card__content">
+                <div class="card__contentslider">
+                    <button class="prevsbtn" data-target="now_playing__list"><i class="fa-solid fa-arrow-left" ></i></button>
+                    <div class="card__scroll-container">
+                        <ul id="now_playing__list" class="card__list">
+                            <!-- Hna gialy mn el function -->
+                        </ul>
+                    </div>
+                    <button class="nextbtn" data-target="now_playing__list"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of First Section -->
+
+    <section id="popular">
+        <div class="container">
+            <div class="card__header">
+                <h2>Popular</h2>
+            </div>
+            <div class="card__content">
+                <div class="card__contentslider">
+                    <button class="prevsbtn" data-target="popular__list"><i class="fa-solid fa-arrow-left" ></i></button>
+                    <div class="card__scroll-container">
+                        <ul id="popular__list" class="card__list">
+                            <!-- Hna gialy mn el function -->
+                        </ul>
+                    </div>
+                    <button class="nextbtn" data-target="popular__list"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="toprated">
+        <div class="container">
+            <div class="card__header">
+                <h2>Top Rated</h2>
+            </div>
+            <div class="card__content">
+                <div class="card__contentslider">
+                    <button class="prevsbtn" data-target="top_rated__list"><i class="fa-solid fa-arrow-left"></i></button>
+                    <div class="card__scroll-container">
+                        <ul id="top_rated__list" class="card__list">
+                            <!-- Hna gialy mn el function -->
+                        </ul>
+                    </div>
+                    <button class="nextbtn" data-target="top_rated__list"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="upcoming">
+        <div class="container">
+            <div class="card__header">
+                <h2>UpComing</h2>
+            </div>
+            <div class="card__content">
+                <div class="card__contentslider">
+                    <button class="prevsbtn" data-target="upcoming__list" ><i class="fa-solid fa-arrow-left"></i></button>
+                    <div class="card__scroll-container">
+                        <ul id="upcoming__list" class="card__list">
+                            <!-- Hna gialy mn el function -->
+                        </ul>
+                    </div>
+                    <button class="nextbtn" data-target="upcoming__list" ><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="chatbot-icon">💬</div>
+    <aside id="chatbot">
+        <div class="container"> 
+            <div id="chatbot-container" class="hidden">
+                <div id="chatbot-header">
+                    <span>Chatbot</span>
+                    <button id="close-btn">&times;</button>
+                </div>
+                <div id="chatbot-body">
+                    <div id="chatbot-messages"></div>
+                </div>
+                <div id="chatbot-input-container">
+                    <input type="text" id="chatbot-input" placeholder="Type a message..." />
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+
+
+</body>
+
+</html>

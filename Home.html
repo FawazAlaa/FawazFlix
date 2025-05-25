@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fawazmdb</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script type="module" src="assets/index.js" defer></script>
+<link rel="stylesheet" href="assets/index.css">
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar__contents">
+                <div class="navbar__title">
+                    <a href="Home.html"><img src="assets/photos/logo.jpg" alt="Logo"></a>
+                    <h1 class="pagetitle">FawazFlix</h1>
+                </div>
+                <div class="navbar__profileimg">
+                    <div class="profileimg">
+                        <a href=""><i class="fa-solid fa-user"></i>
+                            <i class="fa-solid fa-arrow-down"></i>
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </a>
+                        <div class="dropdown">
+                            <div class="dropdown__options">
+                                <a href="#" id="login-dropdown">Log-in</a>
+                                <a href="#" id="signup-dropdown">Sign-up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1>Welcome to FawazFlix </h1>
+                    <h2>your All Time movies review</h2>
+                    <p>Join FawazFlix to review popular movies and TV shows,
+                        It also includes free and fast delivery on thousands of items and more.</p>
+                    <div class="hero__text__btns">
+                        <button id="login-hero" class="btn-primary">FawazFlix Member? Log in</button>
+                        <p>___________or_____________</p>
+                        <button id="signup-hero" class="btn-primary">Sign Up</button>
+                    </div>
+                </div>
+                <figure class="hero__poster">
+                    <img src="assets/photos/movie posters.jpg" alt="Movie Poster">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+      <section id="form">
+        <div class="container">
+            <div class="form__content">
+                <div class="form__content__login">
+                    <h3> Login Information</h3>
+                    <label for="login-email">Email</label>
+                    <input type="email" name="" id="login-email">
+                    <label for="login-password">Password</label>
+                    <input type="password" name="" id="login-password">
+                     <button id="loginbtn" class="btn-primary">Log in</button>
+                </div>
+                <div class="form__content__signup">
+                     <h3> Signup Information</h3>
+                    <label for="signup-name">Name</label>
+                    <input type="text" name="" id="signup-name">
+
+                    <label for="signup-date">Date Of Birth</label>
+                    <input type="number" name="" id="signup-date">
+
+                    <label for="signup-email">Email</label>
+                    <input type="email" name="" id="signup-email">
+
+                    <label for="signup-password">Password</label>
+                    <input type="password" name="" id="signup-password">
+                    <button id="signupbtn" class="btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="mobile">
+        <div class="container">
+            <div class="mobile__content">
+                <div class="mobile__text">
+                    <h2>Coming Soon </h2>
+                    <p>We are launching Mobile app soon so you can review movies anytime during your day</p>
+                    <a href="#hero"><button class="btn-primary">Get Started</button></a>
+                </div>
+                <figure class="hero__poster">
+                    <img src="assets/photos/Mobile" alt="Movie Poster">
+                </figure>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footerlogo">
+                    <a href="Home.html"><img src="assets/photos/logo.jpg" alt="Logo"></a>
+                    <h1 class="pagetitle">FawazFlix</h1>
+                </div>
+                <div class="footer__text">
+                    <a href="">Terms and Privacy Notice</a>
+                    <a href="">Cookie Notice</a>
+                    <a href=""> Send us feedback</a>
+                    <a href=""> Help</a>
+                </div>
+                <p>© 1996-2025,FawazFlix.com, Inc. or its affiliates</p>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
